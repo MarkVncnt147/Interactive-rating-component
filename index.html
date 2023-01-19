@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!--CSS Design -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <!-- Rating state start -->
+    <div class="card card_first">
+      <div class="card_content">
+        <img class="icon_star" src="./images/icon-star.svg" alt="">
+        <h1 class="card_header">How did we do?</h1>
+        <p class="card_paragraph">
+          Please let us know how we did with your support request. All feedback is
+          appreciated to help us improve our offering!
+        </p>
+        <div class="btn_numbers_container">
+          <button class="btn btn_numbers">1</button>
+          <button class="btn btn_numbers">2</button>
+          <button class="btn btn_numbers">3</button>
+          <button class="btn btn_numbers">4</button>
+          <button class="btn btn_numbers">5</button>
+        </div>
+        <div class="btn_submit_container">
+          <button class="btn btn_submit">Submit</button>
+        </div>
+      </div>
+    </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="hidden card card_second">
+        <div class="card_content">
+          <div>
+              <img class="img_thank-you" src="./images/illustration-thank-you.svg" alt="">
+              <div class="btn_select_container">
+                <button class="btn btn_select center">
+                  You selected <span class="rating">0</span> out of 5
+                </button>
+              </div>
+              <h1 class="card_header center">Thank you!</h1>
+
+              <p class="card_paragraph center">
+                We appreciate you taking the time to give a rating. If you ever
+                need more support, don't hesitate to get in touch!
+              </p>
+          </div>
+        </div>
+      </div>
+      <!-- Thank you state end -->
+    </main>
+
+    <script defer src="javascript/script.js"></script>
+  </body>
+</html>
